@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+    <style>
+        body
+        {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número:')) //string
+        var n2 = Number(window.prompt('Digite outro número:')) //string
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) /* Concatenação*/
+
+        // + para adição (nunber + nunber)
+        // + para concatenação (string + string)
+    </script>
+
+
+
+    <!--
+        O window.prompt retorna para o usuário uma string mesmo que voçê digite um número, isso é uma caracteristica do comando. Então temos que converter o n1 e n2 para um number.
+
+            - Para converter uma STRING para um NÚMERO existem várias maneiras:
+
+        1° Number.parseInt(n) converção de um número para um número inteiro.
+            var n1 = Number.parseInt(window.prompt('Digite um número:'))
+
+        2° Number.parseFloat(n) converção para um número real, número com vírgula.
+            var n1 = Number.parseFloat(window.prompt('Digite um número:'))
+        
+        3° Modo simplificado, usando apenas Number(n) com isso o próprio js sabe qual é real e qual é inteiro.
+            var n1 = Number(window.prompt('Digite um número:'))
+        
+        E para converter um número em string tem duas maneiras:
+            String(n)
+            n.toString()
+    -->
+
+
+
+</body>
+</html>

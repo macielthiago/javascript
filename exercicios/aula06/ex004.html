@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras. <br>`)
+        document.write(`Seu nome em maiúsculo fica ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minúsculo fica ${nome.toLowerCase()}`)
+    </script>
+
+
+
+
+<!--
+    Formatação de strings.
+        var s = 'Javascript'
+
+        'Eu estou aprendendo s'        -- não faz interpolação.
+        'Eu estou aprendendo' + s      -- usa concatenação.
+        `Eu estou aprendendo ${s}`     -- usa template string
+
+            ex:
+                > var nome = 'Thiago'
+                > var idade = 33
+                > var nota = 7.5
+                > `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+                'O aluno Thiago com 33 anos tirou a nota 7.5'
+
+    - Atributos:
+
+    s.length -> quantas letra(caracteres) a string tem.
+    s.toUpperCase() -> transfoma as letras todos em MAIÚSCULAS.
+    s.toLowerCase() -> transforma as letras todas em minúsculas.
+
+    var nome = window.prompt('Qual é o seu nome?')
+    document.write('Seu nome tem ${nome.length} letras') -> vai mostras na area de trabalho quantas letras tem o nome digitado no prompt.
+
+
+        ex:
+            var nome = window.prompt('Qual é o seu nome?')
+            document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras. <br>`)
+            document.write(`Seu nome em maiúsculo fica ${nome.toUpperCase()}`)
+            document.write(`Seu nome em minúsculo fica ${nome.toLowerCase()}`)
+-->
+
+-------------------------------------------------------------------------------------------------
+
+
+<!--
+    Formatando números.
+    > var n1 = 1543.5 
+    > n1
+    1543.5 -> caso queira mudar para duas casas decimais, acrascentamos toFixed()
+    > n1.toFixed(2)
+    '1543.50'
+
+    para fazer que apareça em formato de salário, usaremos uma fórmula mais avançada:
+    > n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    'R$ 1,543.50'
+
+
+-->
+
+
+
+
+</body>
+</html>
