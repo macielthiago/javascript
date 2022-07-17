@@ -28,3 +28,27 @@
     </script>
 </body>
 </html>
+--------------------------------------------------------------------------------------------------------------------------------------
+<!--
+    1° - Acessar por Marca - getElementsByTagName()
+
+    var corpo = window.document.body                               --- variável para o body
+    var p1 = document.getElementsByTagName('p')[0]                 --- entre colchetes é para selecional qual parágrafo vai usar
+ ex 1   document.write('Está escrito assim: ' + p1.innerText)      --- o inner text pega o texto, o innerHTML pega toda a formatação
+ ex 2   p1.style.color = 'blue'                                    --- vai mudar a cor do texto do parágrafo selecionado
+ ex 3   corpo.style.backgrond = 'black'                            --- muda a cor da página
+-->
+--------------------------------------------------------------------------------------------------------------------------------------
+<!--
+    2° - acessar por ID - getElementById()
+
+    var d = window.document.getElementById('msg')
+ ex 1  d.style.background = 'green'                                --- a div far ficar da cor verde
+ ex 2  d.innerText = 'Estou aguardando...'                         --- mudou o texto por JavaScript
+-->
+--------------------------------------------------------------------------------------------------------------------------------------
+<!--
+    5° - acessar por Seletor - querySelector() / querySelectorAll()
+    var d = window.document.querySelector('div#msg')
+ ex 1   d.style.color ='blue'
+-->
